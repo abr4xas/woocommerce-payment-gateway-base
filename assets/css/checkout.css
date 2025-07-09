@@ -1,0 +1,116 @@
+/**
+ * MyPlugin Payment Gateway Checkout Styles
+ */
+
+.myplugin-payment-description {
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.wc-credit-card-form {
+    margin-top: 1rem;
+}
+
+.wc-credit-card-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wc-credit-card-form .form-row {
+    margin-bottom: 1rem;
+}
+
+.wc-credit-card-form .form-row label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.wc-credit-card-form .form-row input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.wc-credit-card-form .form-row input:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.2);
+}
+
+.wc-credit-card-form .form-row-wide {
+    width: 100%;
+}
+
+.wc-credit-card-form .form-row-first {
+    width: 48%;
+    float: left;
+}
+
+.wc-credit-card-form .form-row-last {
+    width: 48%;
+    float: right;
+}
+
+.wc-credit-card-form .clear {
+    clear: both;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wc-credit-card-form .form-row-first,
+    .wc-credit-card-form .form-row-last {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Error states */
+.wc-credit-card-form .form-row.woocommerce-invalid label {
+    color: #dc3232;
+}
+
+.wc-credit-card-form .form-row.woocommerce-invalid input {
+    border-color: #dc3232;
+}
+
+.wc-credit-card-form .form-row.woocommerce-validated input {
+    border-color: #7ad03a;
+}
+
+/* Loading state */
+.wc-credit-card-form.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Card type detection */
+.wc-credit-card-form-card-number {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDRIMmMtMS4xIDAtMiAuOS0yIDJ2OGMwIDEuMS45IDIgMiAyaDIwYzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6IiBmaWxsPSIjRkZGIi8+CjxwYXRoIGQ9Ik0yMiA0SDJjLTEuMSAwLTIgLjktMiAydjhoMjBWNmMwLTEuMS0uOS0yLTItMnoiIGZpbGw9IiM5OTkiLz4KPHBhdGggZD0iTTYgMTJoNHYyaC00di0yem04IDBoNHYyaC00di0yem0tNCAwaDJ2MmgtMnYtMnoiIGZpbGw9IiMzMzMiLz4KPC9zdmc+');
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 24px 16px;
+    padding-right: 3rem;
+}
+
+/* Visa */
+.wc-credit-card-form-card-number.visa {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDRIMmMtMS4xIDAtMiAuOS0yIDJ2OGMwIDEuMS45IDIgMiAyaDIwYzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6IiBmaWxsPSIjMDA3MGFhIi8+CjxwYXRoIGQ9Ik0yMiA0SDJjLTEuMSAwLTIgLjktMiAydjhoMjBWNmMwLTEuMS0uOS0yLTItMnoiIGZpbGw9IiNmZmYiLz4KPHBhdGggZD0iTTYgMTJoNHYyaC00di0yem04IDBoNHYyaC00di0yem0tNCAwaDJ2MmgtMnYtMnoiIGZpbGw9IiMwMDcwYWEiLz4KPC9zdmc+');
+}
+
+/* Mastercard */
+.wc-credit-card-form-card-number.mastercard {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDRIMmMtMS4xIDAtMiAuOS0yIDJ2OGMwIDEuMS45IDIgMiAyaDIwYzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6IiBmaWxsPSIjZmZmIi8+CjxwYXRoIGQ9Ik0yMiA0SDJjLTEuMSAwLTIgLjktMiAydjhoMjBWNmMwLTEuMS0uOS0yLTItMnoiIGZpbGw9IiNmZmYiLz4KPGNpcmNsZSBjeD0iOSIgY3k9IjgiIHI9IjMiIGZpbGw9IiNmZjYwMDAiLz4KPGNpcmNsZSBjeD0iMTUiIGN5PSI4IiByPSIzIiBmaWxsPSIjZmY2MDAwIi8+CjxwYXRoIGQ9Ik0xMiAxMWMtMS4xIDAtMi0uOS0yLTJzLjktMiAyLTIgMiAuOSAyIDItLjkgMi0yIDJ6IiBmaWxsPSIjZmY2MDAwIi8+Cjwvc3ZnPg==');
+}
+
+/* American Express */
+.wc-credit-card-form-card-number.amex {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIyIDRIMmMtMS4xIDAtMiAuOS0yIDJ2OGMwIDEuMS45IDIgMiAyaDIwYzEuMSAwIDItLjkgMi0yVjZjMC0xLjEtLjktMi0yLTJ6IiBmaWxsPSIjMDA3MGFhIi8+CjxwYXRoIGQ9Ik0yMiA0SDJjLTEuMSAwLTIgLjktMiAydjhoMjBWNmMwLTEuMS0uOS0yLTItMnoiIGZpbGw9IiNmZmYiLz4KPHBhdGggZD0iTTYgMTJoNHYyaC00di0yem04IDBoNHYyaC00di0yem0tNCAwaDJ2MmgtMnYtMnoiIGZpbGw9IiMwMDcwYWEiLz4KPC9zdmc+');
+}
